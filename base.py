@@ -8,7 +8,7 @@ class BaseClass(ABC):
     def __init__(self, *args, **kwargs):
         self.store_objects(self)
         self.id = self.id_adder()
-        super.__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @classmethod
     def store_objects(cls, obj):
