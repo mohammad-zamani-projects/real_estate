@@ -1,7 +1,7 @@
-from abc import ABC
+from base import BaseClass
 
 
-class Estate(ABC):
+class Estate(BaseClass):
     def __init__(self, seller, area, room_count, building_age, region, address, usage, *args, **kwargs):
         self.seller = seller
         self.area = area
